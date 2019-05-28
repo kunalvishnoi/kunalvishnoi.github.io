@@ -1,77 +1,145 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Kunal Vishnoi | Portfolio</title>
+  <title>Kunal Vishno | About</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
   crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
   <!-- <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"> -->
   <script type="text/javascript" src="https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </head>
-<body>
-  <div id="footer_right" class="d-none d-md-block">
-    <p>Kunalvishnoi.github.io</p>
+<body style="background-color: #fff;">
+  <section id="hero_section" style="background-image: url(../img/cool-background.png); background-color: rgba(0,0,0,0.8)!important; background-blend-mode: multiply;">
+    <nav class="navbar navbar-expand-lg mx-auto navbar-light">
+      <h1 class="navbar-brand text-white" href="#" style="font-family: 'Montserrat', sans-serif;">
+       About
+     </h1>
+     <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+      <div class="d-block d-md-none pt-3">
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item px-3">
+          <a class="nav-link" href="/">home</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link active" href="#">about</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="/work">work</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#">contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 px-5" id="hero_right">
+        <img src="../img/kunal.jpg" class="rounded-circle">
+      </div>
+      <div class="col-md-6 px-5" id="hero_left">
+        <h2 style="font-family: 'Montserrat', sans-serif;">About Me!</h2>
+        <p class="about_detail">A front-end developer based in Noida, specialized in HTML, CSS, JavaScript & ReactJS.</p>
+        <p class="about_detail pt-2">Experienced Web Developer with a demonstrated history of working in the internet industry. Skilled in ReactJs,Github, Html,Css, Bootstrap and JavaScript. Strong engineering professional with a Bachelor of Technology (B.Tech.) focused in Information Technology from JSS ACADEMY OF TECHNICAL EDUCATION, NOIDA</p>
+      </div>
+    </div>
   </div>
-  <div id="bottom_footer" class="d-none d-md-block">
-    <a href="https://www.facebook.com/Kunalvishnoi" target="_blank">
-      <img src="img/facebook.svg" width="50px"></a>&nbsp;&nbsp;&nbsp;
-      <a href="https://www.instagram.com/Kunalvishnoi31" target="_blank">
-        <img src="img/instagram.svg" width="50px">
-      </a>
-    </div>
-    <div id="particle-canvas" style="height: 100vh;"></div>
-    <section id="hero_section">
-      <nav class="navbar navbar-expand-lg mx-auto navbar-light">
-        <a class="navbar-brand text-white" href="#">
-         &nbsp;
-       </a>
-       <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-        <div class="d-block d-md-none pt-3">
-        </div>
-        <ul class="navbar-nav">
-          <li class="nav-item px-3">
-            <a class="nav-link active" href="#">home</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="/about">about</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="/work">work</a>
-          </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" href="#">contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6" id="hero_right">
-          <img src="img/kunal.jpg" class="rounded-circle">
-        </div>
-        <div class="col-md-6" id="hero_left">
-          <p>Hi there! My name is</p>
-          <h1 style="font-family: 'Monserrat' , serif;">Kunal Vishnoi</h1>
-          <p class="detail">A front-end developer based in Noida, specialized in HTML, CSS, JavaScript & ReactJS.</p>
-          <a class="btn btn-link text-white" href="https://drive.google.com/file/d/1t8du_cWRnmlKI1uZcsT90sbz1kNHaW2v/view?usp=sharing" target="_blank">Resume</a>
+  <div class="container pt-2 about_new">
+    <h1>Skills Set</h1>
+    <p class="pt-2">I'm a web developer primarily focused on frontend engineering & below is the overview of my technical as well as soft skills I've developed over my academic course in three years.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="box">
+          <div class="text-center">
+            <img src="../img/laptop.png">
+          </div>
+          <h3 class="pt-3 text-center"><b>Front End</b></h3>
+          <div class="pt-3 mx-2 px-5" style="font-weight: bold; line-height: 1rem;">
+            <p>JavaScript</p>
+            <p>ReactJs</p>
+            <p>Jquery</p>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>SASS</p>
+            <p>Bootstrap 3/4</p>
+            <p>JSON</p>
+            <p>AJAX</p>
+          </div>
         </div>
       </div>
+      <div class="col-md-4">
+        <div class="box">
+          <div class="text-center">
+            <div class="text-center">
+              <img src="../img/laptop.png">
+            </div>
+          </div>
+          <h3 class="pt-3 text-center"><b>Other Tech</b></h3>
+          <div class="pt-3 px-5 mx-2" style="font-weight: bold; line-height: 1rem;">
+            <p>Git</p>
+            <p>GitHub</p>
+            <p>C Programming</p>
+            <p>C++ Programming</p>
+            <p>Python</p>
+            <p>DBMS</p>
+            <p>DAA</p>
+            <p>Data Structure</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+          <div class="text-center">
+            <img src="../img/laptop.png">
+          </div>
+          <h3 class="pt-3 text-center"><b>Soft Skills</b></h3>
+          <div class="pt-3 mx-2 px-5" style="font-weight: bold; line-height: 1rem;">
+            <p>Hardworking</p>
+            <p>Punctual</p>
+            <p>Time Management</p>
+            <p>Quick Learner</p>
+            <p>Team Player</p>
+            <p>Leadership</p>
+            <p>Team Management</p>
+          </div>
+        </div>
+      </div>
     </div>
+    <h1 class="pt-5">Other Links</h1>
+    <p class="pt-2">Visit the following links to get to know more about my work &amp; skills :</p>
+    <h3 class="pt-3">Internship Work</h3>
+    <ul>
+      <li><a href="http://www.rqna.org" target="_blank">www.rqna.org</a></li>
+      <li><a href="http://www.zester.surge.sh" target="_blank">www.zester.surge.sh</a></li>
+      <li><a href="http://roadmonstersindia.com" target="_blank">www.roadmonstersindia.com</a></li>
+      <li><a href="http://afs.net.in" target="_blank">www.afs.net.in</a></li>
+      <li><a href="http://aqmotionpictures.com" target="_blank">www.aqmotionpictures.com</a></li>
+      <li><a href="https://triptishinghalsomani.com" target="_blank">www.triptishinghalsomani.com</a></li>
+    </ul>
+    <h3 class="pt-3">Personal/Other Work</h3>
+    <ul class="pb-5">
+      <li><a href="http://www.hackncs.com" target="_blank">www.hackncs.com</a></li>
+      <li><a href="http://www.jssyp.surge.sh" target="_blank">www.jssyp.surge.sh</a></li>
+      <li><a href="http://loot.zealicon.in" target="_blank">www.loot.zealicon.in</a></li>
+      <li><a href="http://robihar.com" target="_blank">www.robihar.com</a></li>
+    </ul>
+  </div>
+</section>
 
-  </section>
-  <script type="text/javascript">
+<script type="text/javascript">
         // particle.min.js hosted on GitHub
 // Scroll down for initialisation code
 
@@ -81,10 +149,10 @@
 
 var canvasDiv = document.getElementById('particle-canvas');
 var options = {
-  particleColor: '#888',
+  particleColor: '#999',
   interactive: false,
   speed: 'low',
-  density: 'high'
+  density: 'medium'
 };
 var particleCanvas = new ParticleNetwork(canvasDiv, options);
 </script>
