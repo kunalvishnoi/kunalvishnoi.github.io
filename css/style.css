@@ -84,9 +84,9 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column; }
     @media (max-width: 768px) {
       #hero_section #hero_left {
-        height: 45vh;
+        min-height: 55vh;
         justify-content: start;
-        padding-top: 10px; } }
+        padding-bottom: 10px; } }
     #hero_section #hero_left p {
       color: #C8C1C1;
       font-size: 1rem; }

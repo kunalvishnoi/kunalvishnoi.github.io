@@ -100,9 +100,9 @@ body::-webkit-scrollbar-thumb {
     height: 70vh;
     flex-direction: column;
     @media(max-width:768px){
-      height: 45vh;
+      min-height: 55vh;
       justify-content: start;
-      padding-top: 10px;
+      padding-bottom: 10px;
     }
     p {
       color: #C8C1C1;
