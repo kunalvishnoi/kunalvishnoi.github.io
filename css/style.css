@@ -67,7 +67,7 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 10px; }
     @media (max-width: 768px) {
       #hero_section #hero_right {
-        height: 50vh; } }
+        height: 40vh; } }
     #hero_section #hero_right img {
       border: 2rem solid #2A2A2A;
       border-radius: 50%;
@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column; }
     @media (max-width: 768px) {
       #hero_section #hero_left {
-        height: 45vh;
+        min-height: 60vh;
         padding-top: 10px; } }
     #hero_section #hero_left p {
       color: #C8C1C1;
