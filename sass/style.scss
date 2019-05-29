@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb {
     height: 70vh;
     flex-direction: column;
     @media(max-width:768px){
-      min-height: 55vh;
+      min-height: 65vh;
       justify-content: start;
       padding-bottom: 10px;
     }
