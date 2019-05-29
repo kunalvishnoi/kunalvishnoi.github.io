@@ -78,8 +78,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    padding-bottom: 10px;
+    height: 70vh;
     @media(max-width:768px){
       height: 40vh;
     }
@@ -101,7 +100,8 @@ body::-webkit-scrollbar-thumb {
     height: 70vh;
     flex-direction: column;
     @media(max-width:768px){
-      min-height: 60vh;
+      height: 45vh;
+      justify-content: start;
       padding-top: 10px;
     }
     p {
