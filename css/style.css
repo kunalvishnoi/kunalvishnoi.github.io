@@ -1,43 +1,277 @@
-/*
-Error: Invalid CSS after "    }": expected "}", was ""
-        on line 317 of sass/style.scss
+@font-face {
+  font-family: Monts;
+  src: url(../font/Montserrat-Light.otf); }
+*:focus {
+  outline: 0 !important; }
 
-312:       font-weight: 800;
-313:       @media(max-width:768px){
-314:         font-size: 3rem;
-315:       }
-316:     }
+body {
+  background-color: #000;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Monts;
+  color: #fff; }
+  body #particle-canvas {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #000 !important;
+    z-index: -1; }
 
-Backtrace:
-sass/style.scss:317
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:679:in `block'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:696:in `block_child'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:41:in `parse'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:414:in `_to_tree'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    }\": expected \"}\", was \"\"\A         on line 317 of sass/style.scss\A \A 312:       font-weight: 800;\A 313:       @media(max-width:768px){\A 314:         font-size: 3rem;\A 315:       }\A 316:     }"; }
+body::-webkit-scrollbar {
+  width: 0.4em; }
+
+body::-webkit-scrollbar-track {
+  background-color: white; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #D61549;
+  outline: 1px solid #D61549; }
+
+.navbar-light {
+  padding-top: 3rem;
+  padding-right: 7rem; }
+  @media (max-width: 768px) {
+    .navbar-light {
+      padding-top: 1.5rem;
+      padding-right: 15px; } }
+  .navbar-light .navbar-brand {
+    padding-left: 6rem; }
+    @media (max-width: 768px) {
+      .navbar-light .navbar-brand {
+        padding-left: 2rem; } }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("../img/hamburger.svg"); }
+  .navbar-light .navbar-nav .nav-link {
+    color: #F1E6E6 !important;
+    font-weight: 600;
+    z-index: 999; }
+    .navbar-light .navbar-nav .nav-link:hover {
+      border-bottom: 2px solid #D61549; }
+  .navbar-light .active {
+    border-bottom: 2px solid #D61549 !important; }
+    @media (max-width: 768px) {
+      .navbar-light .active {
+        width: 20%; } }
+
+#hero_section {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5; }
+  #hero_section #hero_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; }
+    @media (max-width: 768px) {
+      #hero_section #hero_right {
+        height: 40vh; } }
+    #hero_section #hero_right img {
+      border: 2rem solid #2A2A2A;
+      border-radius: 50%;
+      height: 300px;
+      width: 300px; }
+      @media (max-width: 768px) {
+        #hero_section #hero_right img {
+          height: 250px;
+          width: 250px;
+          border: 1rem solid #2A2A2A; } }
+  #hero_section #hero_left {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    flex-direction: column; }
+    @media (max-width: 768px) {
+      #hero_section #hero_left {
+        height: 45vh;
+        justify-content: start;
+        padding-bottom: 10px; } }
+    #hero_section #hero_left p {
+      color: #C8C1C1;
+      font-size: 1rem; }
+      @media (max-width: 768px) {
+        #hero_section #hero_left p {
+          font-size: 0.8rem; } }
+    #hero_section #hero_left h1 {
+      font-size: 4rem;
+      font-weight: 800; }
+      @media (max-width: 768px) {
+        #hero_section #hero_left h1 {
+          font-size: 3rem; } }
+    #hero_section #hero_left h2 {
+      font-size: 3.5rem; }
+      @media (max-width: 768px) {
+        #hero_section #hero_left h2 {
+          font-size: 2.8rem; } }
+    #hero_section #hero_left .detail {
+      width: 50%; }
+      @media (max-width: 768px) {
+        #hero_section #hero_left .detail {
+          width: 100%; } }
+    #hero_section #hero_left .about_detail {
+      width: 75%; }
+      @media (max-width: 768px) {
+        #hero_section #hero_left .about_detail {
+          width: 100%; } }
+    #hero_section #hero_left .btn-link {
+      background-color: #D61549;
+      text-decoration: none;
+      width: 25%; }
+      @media (max-width: 768px) {
+        #hero_section #hero_left .btn-link {
+          width: 40%; } }
+
+#footer_right {
+  position: fixed;
+  bottom: 1rem;
+  right: 6rem;
+  color: #F1E6E6; }
+
+#bottom_footer {
+  position: fixed;
+  bottom: 1rem;
+  left: 6rem; }
+
+#projects {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5; }
+  #projects p {
+    font-size: 18px; }
+    @media (max-width: 768px) {
+      #projects p {
+        font-size: 15px; } }
+  #projects h1 {
+    font-family: Montserrat;
+    font-size: 32px; }
+    @media (max-width: 768px) {
+      #projects h1 {
+        font-size: 20px; } }
+  #projects .bgimg-1 {
+    background: url(../img/em.png) no-repeat fixed 5% 150px;
+    background-size: 50%;
+    color: white;
+    position: relative;
+    height: 100%; }
+    @media (max-width: 768px) {
+      #projects .bgimg-1 {
+        background-image: url(../img/em.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        background-size: 90%; } }
+  #projects .image_height {
+    height: 80vh; }
+    @media (max-width: 768px) {
+      #projects .image_height {
+        height: 30vh !important; } }
+  #projects .text_height {
+    height: 70vh; }
+    @media (max-width: 768px) {
+      #projects .text_height {
+        height: auto; } }
+  #projects .bgimg-2 {
+    background: url(../img/incu.png) no-repeat fixed 5% 150px;
+    background-size: 50%;
+    color: white;
+    position: relative;
+    height: 100%; }
+    @media (max-width: 768px) {
+      #projects .bgimg-2 {
+        background-image: url(../img/incu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        background-size: 90%; } }
+  #projects .bgimg-3 {
+    background: url(../img/pk.png) no-repeat fixed 5% 150px;
+    background-size: 50%;
+    color: white;
+    position: relative;
+    height: 100%; }
+    @media (max-width: 768px) {
+      #projects .bgimg-3 {
+        background-image: url(../img/pk.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        background-size: 90%; } }
+  #projects .bgimg-4 {
+    background: url(../img/zealicon.png) no-repeat fixed 5% 150px;
+    background-size: 50%;
+    color: white;
+    position: relative;
+    height: 100%; }
+    @media (max-width: 768px) {
+      #projects .bgimg-4 {
+        background-image: url(../img/zealicon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        background-size: 90%; } }
+
+.about_new {
+  margin-top: 30vh;
+  background-color: #fff !important;
+  color: #000 !important; }
+  @media (max-width: 768px) {
+    .about_new {
+      margin-top: 5vh; } }
+  .about_new h1 {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif; }
+  .about_new h3 {
+    font-family: 'Montserrat', sans-serif; }
+  .about_new a {
+    color: black !important;
+    text-decoration: none !important;
+    font-weight: bold !important; }
+  .about_new .box {
+    box-shadow: 11px 11px 34px rgba(0, 0, 0, 0.16);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 400px;
+    border-radius: 10px;
+    border: 1px solid #707070;
+    width: 95%;
+    margin-top: 4rem; }
+    @media (max-width: 768px) {
+      .about_new .box {
+        width: 100%; } }
+  .about_new img {
+    border-radius: 50%;
+    background-color: #000;
+    padding: 20px;
+    margin-top: -18%;
+    width: 80px; }
+
+#hero_left_about {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  flex-direction: column; }
+  @media (max-width: 768px) {
+    #hero_left_about {
+      min-height: 80vh;
+      max-height: 100vh;
+      justify-content: start;
+      padding-bottom: 10px; } }
+  #hero_left_about p {
+    color: #C8C1C1;
+    font-size: 1rem; }
+    @media (max-width: 768px) {
+      #hero_left_about p {
+        font-size: 0.8rem; } }
+  #hero_left_about h1 {
+    font-size: 4rem;
+    font-weight: 800; }
+    @media (max-width: 768px) {
+      #hero_left_about h1 {
+        font-size: 3rem; } }
+
+/*# sourceMappingURL=style.css.map */
