@@ -80,7 +80,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     height: 70vh;
     @media(max-width:768px){
-      height: 40vh;
+      min-height: 50vh;
+      padding-bottom: 10px;
     }
     img {
       border:2rem solid #2A2A2A;

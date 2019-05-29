@@ -66,7 +66,8 @@ body::-webkit-scrollbar-thumb {
     height: 70vh; }
     @media (max-width: 768px) {
       #hero_section #hero_right {
-        height: 40vh; } }
+        min-height: 50vh;
+        padding-bottom: 10px; } }
     #hero_section #hero_right img {
       border: 2rem solid #2A2A2A;
       border-radius: 50%;
