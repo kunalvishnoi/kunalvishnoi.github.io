@@ -100,8 +100,8 @@ body::-webkit-scrollbar-thumb {
     height: 70vh;
     flex-direction: column;
     @media(max-width:768px){
-      min-height: 65vh;
-      justify-content: start;
+      height: 45vh;
+      justify-content:start;
       padding-bottom: 10px;
     }
     p {
@@ -289,4 +289,28 @@ h1 {
     width: 80px;
   }
 }
-
+#hero_left_about {
+    display:flex;
+    justify-content: center;
+    height: 70vh;
+    flex-direction: column;
+    @media(max-width:768px){
+      min-height: 80vh;
+      max-height: 100vh;
+      justify-content: start;
+      padding-bottom: 10px;
+    }
+    p {
+      color: #C8C1C1;
+      font-size: 1rem;
+      @media(max-width:768px){
+        font-size: 0.8rem;
+      }
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      @media(max-width:768px){
+        font-size: 3rem;
+      }
+    }
