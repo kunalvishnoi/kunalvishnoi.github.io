@@ -78,10 +78,10 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 80vh;
+    padding-bottom: 10px;
     @media(max-width:768px){
-      min-height: 50vh;
-      padding-bottom: 10px;
+      height: 50vh;
     }
     img {
       border:2rem solid #2A2A2A;
