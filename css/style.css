@@ -257,8 +257,6 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column; }
   @media (max-width: 768px) {
     #hero_left_about {
-      min-height: 80vh;
-      max-height: 100vh;
       justify-content: start;
       padding-bottom: 10px; } }
   #hero_left_about p {
@@ -273,5 +271,14 @@ body::-webkit-scrollbar-thumb {
     @media (max-width: 768px) {
       #hero_left_about h1 {
         font-size: 3rem; } }
+
+.about_head {
+  background-image: url(../img/cool-background.png);
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-blend-mode: multiply;
+  height: 100vh; }
+  @media (max-width: 768px) {
+    .about_head {
+      height: 120vh; } }
 
 /*# sourceMappingURL=style.css.map */
