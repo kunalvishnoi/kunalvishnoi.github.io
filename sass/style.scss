@@ -153,7 +153,7 @@ body::-webkit-scrollbar-thumb {
   color: #F1E6E6;
 }
 #bottom_footer {
-  position: fixed;
+  position: absolute;
   bottom: 1rem;
   left: 6rem;
 }
@@ -322,3 +322,8 @@ h1 {
         height: 105vh;
       }
     }
+#about_last {
+  bottom: 2rem;
+  position: absolute;
+  left: 35%;
+}
